@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c  $CFILE -o echo $CFILE | cud -d. -f1 .o
+gcc -c  main.c -o main.o
