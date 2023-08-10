@@ -8,14 +8,10 @@
  * Return: Always 0 (Success)
  */
 int main(void) {
-  printf("Type:char,Storage size is:%zu \n", sizeof(char));
- printf("Type:unsigned char,Storage size is:%zu \n",sizeof(unsigned char ));
- printf("Type:short,Storage size is:%zu \n", sizeof (short));
- printf("Type:unsigned short,Storage size is:%zu \n",sizeof (unsigned short));
- printf("Type:int,Storage size is:%zu \n", sizeof(int));
- printf("Type:unsigned int,Storage size is:%zu \n", sizeof (unsigned int));
- printf("Type:long,Storage size is:%zu \n", sizeof (long));
- printf("Type:unsigned long,Storage size is:%zu \n",sizeof (unsigned long));
- 
+ printf("Size of a char:%zu byte(s)\n", sizeof(char));
+ printf("Size of an int:%zu byte(s)\n", sizeof(int));
+ printf("Size of a long:%zu byte(s)\n", sizeof (long));
+ printf("Size of a long long int:%zu byte(s)\n",sizeof (long long int));
+ printf("Size of a float:%zu byte(s)\n", sizeof (float));
     return 0;
 }
