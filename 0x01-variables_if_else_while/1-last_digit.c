@@ -13,19 +13,19 @@ int n;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-
-if (n>5)
+int yoyo=n%10;
+if (yoyo>5)
 {
-printf("%d and is greater than 5\n", n);
+printf("%d and is greater than 5\n", yoyo);
 }
 
-else if (6>n && n!=0)
+else if (6>yoyo && yoyo!=0)
 {
-printf("%d and is less than 6 and not 0\n", n);
+printf("%d and is less than 6 and not 0\n", yoyo);
 }
 else
 {
-printf("%d and is 0\n", n);
+printf("%d and is 0\n", yoyo);
 }
 
 return (0);
