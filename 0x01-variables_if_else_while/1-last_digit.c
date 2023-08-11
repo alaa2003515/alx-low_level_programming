@@ -13,7 +13,7 @@ int n;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-scanf("%d",&n);
+
 if (n>5)
 {
 printf("%d and is greater than 5\n", n);
