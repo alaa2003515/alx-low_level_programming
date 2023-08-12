@@ -15,7 +15,6 @@ char var = 'a';
 for (var = 'a' ; var <= 'z' ; var++)
 {
 putchar(var);
-putchar('\n')
 }
 
 return (0);
