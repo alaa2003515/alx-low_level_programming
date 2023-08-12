@@ -11,12 +11,16 @@
 
 int main(void)
 {
-char var;
-for (var = 49 ; var <= 57 ; var++)
+int var;
+int var_1= 57;
+for (var = 49 ; var <= 56 ; var++)
 {
 putchar(var);
 putchar(',');
 }
+
+putchar(var_1);
+putchar('$');
 putchar('\n');
 return (0);
 }
