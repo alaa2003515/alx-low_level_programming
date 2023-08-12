@@ -12,7 +12,6 @@
 int main()
 {
 char var='a';
-char VAR='z';
 for (var='a'; var<= 'z';var++)
 {
 putchar(var);
