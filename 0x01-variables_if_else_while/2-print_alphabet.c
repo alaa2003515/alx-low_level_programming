@@ -9,14 +9,13 @@
  */
 
 
-int main()
+int main(void)
 {
-char var='a';
-for (var='a'; var<= 'z';var++)
+char var = 'a';
+for (var = 'a' ; var <= 'z' ; var++)
 {
 putchar(var);
-putchar('\n');
 }
 
-return 0;
+return (0);
 }
