@@ -17,12 +17,11 @@ for (var = 'a' ; var <= 'z' ; var++)
 {
 putchar(var);
 }
-putchar('\n');
 for (VAR = 'A' ; VAR <= 'Z' ; VAR++)
 {
 putchar(VAR);
 }
-
+putchar('\n');
 return (0);
 }
 
