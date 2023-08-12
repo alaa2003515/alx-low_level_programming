@@ -12,15 +12,16 @@
 int main(void)
 {
 int var;
-int var_1= 57;
+int var_1 = 57;
 for (var = 48 ; var <= 56 ; var++)
 {
-putchar(var);
+putchar( var);
+putchar(' ');
 putchar(',');
 }
 
 putchar(var_1);
-putchar('\n');
+
 return (0);
 }
 
