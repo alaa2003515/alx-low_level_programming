@@ -13,7 +13,7 @@ int main(void)
 {
 int var;
 int var_1= 57;
-for (var = 49 ; var <= 56 ; var++)
+for (var = 48 ; var <= 56 ; var++)
 {
 putchar(var);
 putchar(',');
