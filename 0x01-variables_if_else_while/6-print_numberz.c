@@ -13,14 +13,10 @@ int main(void)
 {
 int var = 0;
 
-for (var = 0 ; var <= 10 ; var++)
+for (var = 0 ; var < 10 ; var++)
 {
 putchar(var + '0');
 }
 putchar('\n');
 return (0);
 }
-
-/*for (var = 0; var < 10; var++)
-    {
-        putchar(var + '0');*/
