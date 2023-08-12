@@ -15,9 +15,9 @@ char var = 'a';
 
 for (var = 'a' ; var <= 'z' ; var++)
 {
-    if (var != 'q' && var != 'e')
+if  (var != 'q' && var != 'e')
 {
-    putchar(var);
+putchar(var);
 }
 }
 putchar('\n');
