@@ -12,13 +12,14 @@
 int main(void)
 {
 int var;
+
+char VAR;
 for (var = 0 ; var <= 9 ; var++)
 {
 putchar(var + '0');
 }
 
 
-char VAR;
 for (VAR = 'a' ; VAR <= 'f' ; VAR++)
 {
 putchar(VAR);
@@ -26,3 +27,4 @@ putchar(VAR);
 putchar('\n');
 return (0);
 }
+
