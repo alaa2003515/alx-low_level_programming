@@ -21,7 +21,7 @@ putchar(',');
 
 putchar(var_1);
 putchar('$');
-putchar('\n');
+
 return (0);
 }
 
