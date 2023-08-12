@@ -12,11 +12,17 @@
 int main(void)
 {
 int var;
-for (var = 0 ; var <= 16 ; var++)
+for (var = 0 ; var <= 9 ; var++)
 {
 putchar(var + '0');
+}
+
+
+char VAR;
+for (VAR = 'a' ; VAR <= 'f' ; VAR++)
+{
+putchar(VAR);
 }
 putchar('\n');
 return (0);
 }
-
