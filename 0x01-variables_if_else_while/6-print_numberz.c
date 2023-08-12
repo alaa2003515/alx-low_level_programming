@@ -15,7 +15,7 @@ int var = 0;
 
 for (var = 0 ; var <= 10 ; var++)
 {
-printf("%d", var);
+putchar(var);
 }
 putchar('\n');
 return (0);
