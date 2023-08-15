@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _islower - function that checks for alphabetic character
+ *  _isalpha - function that checks for alphabetic character
  *@c: character to check
  * Description : a function that checks for alphabetic character.
  * Return: Always 0 (Success)
  */
 
 
-int _islower(int c)
+int _isalpha(int c)
 {
 
 
