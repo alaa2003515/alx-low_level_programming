@@ -12,9 +12,9 @@ void print_alphabet(void)
 
 int eng;
 for (eng = 'a'; eng <= 'z' ; eng++)
-putchar(eng);
+_putchar(eng);
 
-putchar('\n');
+_putchar('\n');
 
 
 return (0);
