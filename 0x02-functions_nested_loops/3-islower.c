@@ -12,10 +12,7 @@ int _islower(int c)
 {
 
 
-printf("enter c");
-scanf("%d", &c);
-
-if (c >= 'a' ||  c <= 'z')
+if (c >= 'a' &&  c <= 'z')
 {
 return (1);
 }
