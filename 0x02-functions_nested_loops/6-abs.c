@@ -11,7 +11,7 @@
 
 int _abs(int n)
 {
-int n;
+
 int ju;
 if (n < 0)
 {
@@ -26,4 +26,5 @@ return (n);
 
 
 }
+
 
