@@ -13,7 +13,7 @@ int _islower(int c) (void)
 
 
 printf("enter The value of c");
-scanf("%c", &c);
+scanf("%d", &c);
 
 if (c >= 'a' && c <= 'z')
 {
