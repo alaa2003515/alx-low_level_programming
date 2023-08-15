@@ -9,8 +9,9 @@
  */
 
 
-int _abs(int n)
+int _abs(int)
 {
+int n;
 int ju;
 if (n < 0)
 {
@@ -25,3 +26,4 @@ return (n);
 
 
 }
+
