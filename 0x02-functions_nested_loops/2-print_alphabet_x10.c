@@ -11,7 +11,7 @@ void print_alphabet(void)
 {
 int nolo;
 int eng;
-for (nolo = 0; nolo <= 10 ; nolo++)
+for (nolo = 0; nolo < 10 ; nolo++)
 
 {
 for (eng = 'a'; eng <= 'z' ; eng++)
