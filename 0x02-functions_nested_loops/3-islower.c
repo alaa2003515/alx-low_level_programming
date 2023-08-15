@@ -8,7 +8,7 @@
  */
 
 
-int _islower(int c) (void)
+int _islower(int c)
 {
 
 
