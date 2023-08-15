@@ -20,15 +20,8 @@ printf(", ");
 
 }
 
-for (n=-98; n < 0 ; n++)
-{
 
-printf ("%d",n);
-printf(", ");
-}
 
 
 
 }
-
-
