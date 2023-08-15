@@ -15,9 +15,13 @@ int ju;
 if (n < 0)
 {
 ju = n * -1;
+return (ju);
 }
 
-
+if (n > 0)
+{
+return (n);
+}
 
 
 }
