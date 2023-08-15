@@ -19,7 +19,7 @@ ju = n * -1;
 return (ju);
 }
 
-else 
+else
 {
 return (n);
 }
