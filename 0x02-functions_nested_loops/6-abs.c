@@ -19,12 +19,14 @@ ju = n * -1;
 return (ju);
 }
 
-if (n >= 0)
+else 
 {
 return (n);
 }
 
 
 }
+
+
 
 
