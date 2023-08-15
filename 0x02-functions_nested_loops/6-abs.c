@@ -11,16 +11,13 @@
 
 int _abs(int n)
 {
-
+int ju;
 if (n < 0)
 {
-return (-n);
+ju = n * -1;
 }
 
-if (n > 0)
-{
-return (n);
-}
+
 
 
 }
