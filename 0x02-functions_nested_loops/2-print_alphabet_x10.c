@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 
 /**
  *  print_alphabet - prints lowercase alphabet 10 times
@@ -22,4 +22,6 @@ _putchar(eng);
 
 }
 _putchar('\n');
+}
+ 
 }
