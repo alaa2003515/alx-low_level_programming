@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- *print_sign - function that checks for lowercase character
+ *print_sign - function that prints the sign of a number
  *@n: number to check
- * Description :function that checks for lowercase character
- * Return: Always 0 (Success)
+ * Description :function that prints the sign of a number
+ * Return: 1 and prints '+' if n is greater than zero
+ *         0 and prints '0' if n is zero
+ *        -1 and prints '-' if n is less than zero
  */
 
 
@@ -30,5 +32,6 @@ putchar ('-');
 return (-1);
 
 }
+
 
 }
