@@ -11,7 +11,7 @@
 
 void print_jack_bauer(void)
 {
-int i, j, k, m;
+int  j, k, m;
 
 for (j = 0; j < 3; j++)
 {
