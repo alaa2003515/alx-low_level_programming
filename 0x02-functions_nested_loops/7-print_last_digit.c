@@ -10,16 +10,11 @@
 int print_last_digit(int oui)
 {
 
-int LAST_DIGI;
-if (oui >= 0)
-{
 
-LAST_DIGI = oui % 10;
-}
-else
-{
-LAST_DIGI = (oui % 10) * -1;
-}
-_putchar(LAST_DIGI);
-return (LAST_DIGI);
+if (oui < 0)
+oui *= -1;
+
+_putchar('0' + (oui % 10));
+
+return (oui % 10);
 }
