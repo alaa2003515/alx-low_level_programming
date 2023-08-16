@@ -8,24 +8,23 @@
 
 void times_table(void)
 {
-int n;
-int yoyo;
+   int n;
+ int yoyo;  
 int loka;
 for (n = 0 ; n <= 9 ; n++)
 {
-for (yoyo = 0 ; yoyo <= 9 ; yoyo++)
-{
+    for (yoyo=0 ; yoyo <= 9 ; yoyo++) {
 
 loka = n * yoyo;
-printf("%d", loka);
+printf("%d",loka);
 
-if (yoyo < 9)
-{
-printf(",\t");
-
-}
-}
-printf("\n");
+     if (yoyo < 9)
+     {
+         printf(" ,");
+     
+     }
+    }
+  printf(" \n ");   
 }
 
 }
