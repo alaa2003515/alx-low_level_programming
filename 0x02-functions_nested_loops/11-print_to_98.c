@@ -37,5 +37,3 @@ printf("%d, ", n);
 printf("%d\n", n);
 
 }
-
-}
