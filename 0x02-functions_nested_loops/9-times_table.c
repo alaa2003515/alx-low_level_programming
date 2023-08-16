@@ -1,18 +1,8 @@
-#include "main.h"
-/**
- * times_table - a function that prints the times table, starting with 0
- * Description : function that prints the 9 times table, starting with 0
- * Return: zero
- *
- */
 
-void times_table(void)
-{
 #include "main.h"
+
 /**
  * times_table - a function that prints the times table, starting with 0
- *@yoyo: number start from
- * @loka: function to calculate the time table
  * Description : function that prints the 9 times table, starting with 0
  * Return: zero
  *
