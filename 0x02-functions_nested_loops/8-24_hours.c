@@ -6,41 +6,18 @@
  * Return: zero
  *
  */
-
-
-
 void print_jack_bauer(void)
 {
-int  j, k, m;
-
-for (j = 0; j < 3; j++)
-{
-if (j < 2)
+int n;
+int yo;
+for (n = 0 ; n <= 23 ; n++)
 {
 
-for (k = 0; k < 6; k++)
-
+for (yo = 0 ; yo <= 59 ; yo++)
 {
-for (m = 0; m < 10; m++)
-{
-printf("0%d:%d%d\n", j, k, m);
-
+printf("%02d:%02d \n", n, yo);
 }
 
 }
-}
 
-
-if (j == 2)
-{
-for (k = 0; k < 4; k++)
-{
-for (m = 0; m < 10; m++)
-{
-printf("0%d:%d%d\n", j, k, m);
-
-}
-}
-}
-}
 }
