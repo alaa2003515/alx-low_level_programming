@@ -12,7 +12,7 @@
 int add(int tr, int wr)
 {
 
-int oop = wr + tr;
-return (opp);
+int oop = wr + tr ;
+return (oop);
 
 }
