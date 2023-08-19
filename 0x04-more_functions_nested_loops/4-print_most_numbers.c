@@ -21,8 +21,9 @@ _putchar(bi);
 }
  else
 {
-_putchar(' ');
+continue;
+}
 }
 _putchar('\n');
-}
+
 }
