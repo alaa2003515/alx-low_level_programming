@@ -11,7 +11,7 @@ void print_most_numbers(void)
 {
 
 int bi;
-for (bi = 1; bi < 10; bi++)
+for (bi = 0; bi < 10; bi++)
 
 {
 if (bi != 2 || bi != 4)
