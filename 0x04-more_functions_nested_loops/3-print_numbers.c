@@ -9,7 +9,7 @@
 void print_numbers(void)
 {
 int hu;
-for (hu = 0; hu <= 9 ; hu++)
+for (hu = 0; hu < 10; hu++)
 {
 _putchar(hu + '0');
 }
