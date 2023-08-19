@@ -17,9 +17,9 @@ for (bi = 0; bi < 10; bi++)
 if (bi != 2 || bi != 4)
 
 {
-_putchar(bi);
+_putchar(bi + '0');
 }
- else
+else
 {
 continue;
 }
