@@ -8,6 +8,7 @@
 int _isupper(int N_M_B_E_R)
 {
 if (N_M_B_E_R >= 65 && N_M_B_E_R <= 90)
+}
 return (1);
 }
 return (0);
