@@ -20,7 +20,7 @@ printf("Buzz ");
 else
 printf("%d ", poo);
 }
-if ( poo != 100)
+if (poo != 100)
 {
 printf(" ");
 }

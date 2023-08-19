@@ -19,6 +19,10 @@ if (bi != 2 || bi != 4)
 {
 _putchar(bi);
 }
+ else
+{
+_putchar(' ');
+}
 _putchar('\n');
 }
 }
