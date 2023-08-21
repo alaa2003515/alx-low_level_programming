@@ -8,7 +8,7 @@
 
 
 
-void reset_to_98(int *P)
+void reset_to_98(int *t)
 {
-*p = 98;
+*t = 98;
 }

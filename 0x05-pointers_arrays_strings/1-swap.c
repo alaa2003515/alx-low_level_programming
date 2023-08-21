@@ -9,10 +9,10 @@
 
 
 
-void swap_int(int *hjk, int *lmn)
+void swap_int(int *g, int *h)
 {
 int tito;
-*hjk = tito;
-*lmn = tito;
-*hjk = *lmn;
+*g = *h;
+*g = tito;
+*h = tito;
 }
