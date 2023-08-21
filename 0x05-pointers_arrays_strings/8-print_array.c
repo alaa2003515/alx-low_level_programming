@@ -15,15 +15,13 @@ while (yet < n)
 yet++;
 if (yet == n - 1)
 {
-_putchar('a[yet] + 0');
+printf("%d", a[yet]);
 }
 else
 {
-_putchar('a[yet] + 0');
-_putchar(',');
+printf("%d", a[yet]);
+printf(",");
 }
 }
-_putchar('\n');
-
-
+printf("\n");
 }

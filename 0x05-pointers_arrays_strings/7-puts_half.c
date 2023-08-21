@@ -11,19 +11,17 @@ void puts_half(char *STR)
 int x;
 while (x = 0)
 {
-if (STR[x] == '\0')
+if (STR[x] != '\0')
 {
-break;
-}
 x++;
+}
 }
 do {
-if (STR[x] == '\0')
+if (STR[x] != '\0')
 {
-break;
-}
 x++;
-_putchar('STR + 0');
+}
+_putchar(STR[x]);
 
 } while (x /= 2);
 _putchar('\n');

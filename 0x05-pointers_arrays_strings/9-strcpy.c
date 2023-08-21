@@ -14,5 +14,6 @@ for (n = -1; src[n] != '\0'; n++)
 {
 src[n] = dest[n];
 }
+dest[n++] = '\0';
 return (dest);
 }
