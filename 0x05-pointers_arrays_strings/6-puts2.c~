@@ -1,0 +1,28 @@
+#include "main.h"
+
+/**
+ * puts2 - Write a function that prints every other character.
+ *
+ * Return: returns always (0)
+ */
+
+
+
+void puts2(char *STR)
+{
+int x = 0;
+do {
+if
+(*STR == '\0');
+{break;
+}
+x++;
+if (x % 2 == 0)
+{
+_putchar('STR + 0');
+
+}
+} while (STR[x]);
+_putchar('\n');
+}
+

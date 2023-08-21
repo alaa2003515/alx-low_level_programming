@@ -1,0 +1,18 @@
+#include "main.h"
+
+/**
+ *_strcpy - function that copies the string pointed to by src.
+ *@src:arry _1____
+ *@dest:arry _2____
+ *Return: returns dest ______
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+int n;
+for (n = -1; src[n] != '\0'; n++)
+{
+src[n] = dest[n];
+}
+return (dest);
+}

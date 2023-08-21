@@ -1,0 +1,26 @@
+#include "main.h"
+
+/**
+ *  _strlen - a function that returns the length of a string.
+ *@STR: STRING WILL BE WRITE
+ * Return: returns  (zxc) the length of a string.
+ */
+
+
+
+int _strlen(char *STR)
+{
+int zxc = 0;
+while (*STR++)
+{
+if (*STR == '\0')
+{
+break;
+}
+++zxc;
+}
+
+return (zxc);
+
+
+}

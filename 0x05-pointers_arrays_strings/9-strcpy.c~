@@ -1,0 +1,17 @@
+#include "main.h"
+
+/**
+ *print_array - function that copies the string pointed to by src.
+ *@n: number to start____
+ * Return: returns dest ______
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+int n;
+for (n = -1; src[n] != '\0'; n++)
+{
+src[n] = dest[n];
+}
+return (dest);
+}
