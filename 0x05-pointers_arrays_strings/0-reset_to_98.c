@@ -8,7 +8,7 @@
 
 
 
-void reset_to_98(int *nPO)
+void reset_to_98(int *P)
 {
-p * = 98;
+*p = 98;
 }

@@ -11,14 +11,11 @@
 void _puts(char *STR)
 {
 do {
-if (*STR == '\0')
-{
-break;
-}
-_putchar('STR + 0');
+STR++;
+_putchar(*STR);
 
 
-} while (*STR++);
+} while  (*STR != '\0');
 
 _putchar('\n');
 }

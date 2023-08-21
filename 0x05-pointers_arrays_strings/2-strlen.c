@@ -13,14 +13,8 @@ int _strlen(char *STR)
 int zxc = 0;
 while (*STR++)
 {
-if (*STR == '\0')
-{
-break;
-}
-++zxc;
+  zxc++;
 }
 
 return (zxc);
-
-
 }
