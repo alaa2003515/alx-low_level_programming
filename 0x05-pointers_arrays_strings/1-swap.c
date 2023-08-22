@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  *swap_int - a function that swaps the values of two integers.
  *@g:num_1 to check
@@ -13,6 +13,6 @@ void swap_int(int *g, int *h)
 {
 int tito;
 *g = *h;
-*g = tito;
+tito = *g;
 *h = tito;
 }
