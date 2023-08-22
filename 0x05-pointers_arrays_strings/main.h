@@ -4,14 +4,14 @@
 #include <stdio.h>
 
 int _putchar(char c);
-void reset_to_98(int *n);
-void swap_int(int *a, int *b);
-int _strlen(char *s);
-void _puts(char *str);
-void print_rev(char *s);
-void rev_string(char *s);
-void puts2(char *str);
-void puts_half(char *str);
+void reset_to_98(int *t);
+void swap_int(int *g, int *h);
+int _strlen(char *STR);
+void _puts(char *STR);
+void print_rev(char *STR);
+void rev_string(char *STR);
+void puts2(char *STR);
+void puts_half(char *STR);
 void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 
