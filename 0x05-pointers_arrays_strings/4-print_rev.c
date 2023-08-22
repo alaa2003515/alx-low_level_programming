@@ -14,7 +14,7 @@ int j = 0;
 do {
 
 j++;
- } while (STR[j] != '\0');
+} while (STR[j] != '\0');
 
 for (j -= 1; j >= 0; j--)
 {
