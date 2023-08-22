@@ -10,15 +10,15 @@
 
 void puts2(char *STR)
 {
-int y = 0;
 int x = 0;
+int y = 0;
 do {
-x++;
-} while (STR[x] != '\0');
-while (y < x)
+y++;
+} while (STR[y] != '\0');
+while (x < y)
 {
-_putchar(STR[y])
-y += 2;
+_putchar(STR[y]);
+x += 2;
 }
 _putchar ('\n');
 }
