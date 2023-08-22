@@ -13,13 +13,9 @@ int yet = 0;
 while (yet < n)
 {
 yet++;
-if (yet == n - 1)
-{
 printf("%d", a[yet]);
-}
-else
+if (yet != (n - 1))
 {
-printf("%d", a[yet]);
 printf(",");
 }
 }
