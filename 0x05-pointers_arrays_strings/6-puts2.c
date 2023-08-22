@@ -6,8 +6,6 @@
  * Return: returns always (0)
  */
 
-
-
 void puts2(char *STR)
 {
 int x = 0;
@@ -17,8 +15,9 @@ y++;
 } while (STR[y] != '\0');
 while (x < y)
 {
-_putchar(STR[y]);
 x += 2;
+_putchar(STR[y]);
+
 }
 _putchar ('\n');
 }
