@@ -6,14 +6,12 @@
  * Return: returns always (0)
  */
 
-
-
 void _puts(char *STR)
 {
 do {
-STR++;
-_putchar(*STR);
 
+_putchar(*STR);
+STR++;
 
 } while  (*STR != '\0');
 
