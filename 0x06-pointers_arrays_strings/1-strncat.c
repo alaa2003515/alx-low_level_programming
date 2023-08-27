@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- *_strcat - A function that concatenates two stringS.
+ *_strncat - A function that concatenates two stringS.
  *@dj: arry____
  *@sj:arry of num_ber________
  *@nj:number to check _____
  * Return: returns always (0) ______
  */
 
-char *_strncat(char *dj, char *sj, int nj);
+char *_strncat(char *dj, char *sj, int nj)
 {
 int lmn_1 = 0;
 int lnm_2 = 0;
