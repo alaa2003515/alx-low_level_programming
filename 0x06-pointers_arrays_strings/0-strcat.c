@@ -13,11 +13,16 @@ int siko = 0
 int miko = 0;
 do {
 siko++;
-} while (d[siko]);
+} while (*(d + siko) != '\0');
 
-while (s[miko])
+while (miko >= 0)
 {
-d[siko++] = s[miko];
+*(d + siko) = *(s + miko);
+if (*(s + miko) == '\0')
+break;
+siko++;
 miko++;
 }
+
+return (d);
 }
