@@ -9,20 +9,18 @@
 
 char *_strcat(char *d, char *s)
 {
-int siko = 0
+int siko = 0;
 int miko = 0;
 do {
 siko++;
-} while (*(d + siko) != '\0');
+} while (d[siko] != '\0');
 
-while (miko >= 0)
+while (s[miko] != '\0')
 {
-*(d + siko) = *(s + miko);
-if (*(s + miko) == '\0')
-break;
+d[siko] = s[miko];
 siko++;
 miko++;
 }
-
+d[siko] = '\0';
 return (d);
 }
