@@ -1,0 +1,18 @@
+#include "main.h"
+
+/**
+ *_strcat - aa function that concatenates two strings.
+ *@nop:number To cheCk
+ * Return: returns always (0) ______
+ */
+
+void print_line(int nop)
+{
+int iop;
+
+for (iop = 0; iop < nop; iop++)
+{
+_putchar(95);
+}
+_putchar('\n');
+}
