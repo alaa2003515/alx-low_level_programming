@@ -2,8 +2,8 @@
 
 
 /**
- * main - Entry  point
- *Discrbation :A pr_ogram that pr_ints all different combinations of two digits
+ * main - Entry point
+ *Discrbation :A program that prints all different combinations of two digits
  * Return: Always 0 (Success)
  */
 
@@ -14,17 +14,20 @@ int x = 0;
 int y = 0;
 for (y = 0; y < 100; y++)
 {
-for (x = 0; x < 100; x++)
+for (x = y; x < 100; x++)
 {
-if (y < x)
-{
-putchar((y / 10) + 48);
-putchar((x % 10) + 48);
+int dig_1 = (y / 10) % 10;
+int dig_2 = y % 10;
+int dig_3 = (x / 10) % 10;
+int dig_4 = x % 10;
+
+putchar('0' + dig_1);
+putchar('0' + dig_2);
 putchar(' ');
-putchar((x / 10) + 48);
-putchar((y % 10) + 48);
-}
-if (y != 98 || x != 99)
+putchar('0' + dig_3);
+putchar('0' + dig_4);
+
+if (y != 99 || x != 99)
 {
 putchar(',');
 putchar(' ');
