@@ -37,9 +37,9 @@ _putchar(44);
 _putchar(32);
 _putchar(32);
 }
-printf("%d", loka);
+_putchar(loka + '0');
 }
 }
-printf("\n");
+_putchar('\n');
 }
 }
