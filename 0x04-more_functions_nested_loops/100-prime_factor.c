@@ -9,7 +9,7 @@ int main(void)
 {
 long alaa;
 long int lol = 612852475143;
-long lolo;
+long int lolo;
 double lo = sqrt(lol);
 
 for (alaa = 1; alaa <= lo; alaa++)
