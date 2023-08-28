@@ -12,13 +12,13 @@ int alaa;
 int Alaa = 0;
 do {
 
-} while (alaa < 1024);
+
 if ((alaa % 3 == 0) || (alaa % 5 == 0))
 {
 Alaa += alaa;
 }
 alaa++;
-}
+} while (alaa < 1024);
 printf("%d\n", Alaa);
 return (0);
 }
