@@ -1,0 +1,31 @@
+#include "main.h"
+
+/**
+ *_strcat -  a function that prints an integer.
+ *@s:arry of num_ber________
+ * Return: returns always (0) ______
+ */
+
+
+
+void print_number(int nUmBeR)
+{
+unsigned int koko = mIDO;
+
+if (nUmBeR < 0)
+{
+
+nUmBeR *= -1;
+koko = nUmBeR;
+_putchar(45);
+}
+
+koko /= 10;
+if (koko != 0)
+{
+_putchar(koko);
+}
+_putchar((unsigned int) nUmBeR % 10 + '0');
+
+
+}
