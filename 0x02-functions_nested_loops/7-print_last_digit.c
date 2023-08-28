@@ -1,20 +1,22 @@
 #include "main.h"
+
 /**
  *print_last_digit - a function that prints the last digit of a number.
  * Description : a function that prints the last digit of a number.
  *@oui: number to check
- * Return: LAST_DIGI
+ * Return: kjh.__
  *
  */
 
 int print_last_digit(int oui)
 {
 
+int kjh = oui % 10;
+if (kjh < 0)
+{
+kjh = kjh * -1;
+}
+_putchar('0' + kjh);
 
-if (oui < 0)
-oui *= -1;
-
-_putchar('0' + (oui % 10));
-
-return (oui % 10);
+return (kjh);
 }
