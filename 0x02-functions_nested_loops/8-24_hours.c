@@ -6,7 +6,7 @@
  * Return: zero
  *
  */
-void print_jack_bauer(void)
+void jack_bauer(void)
 {
 int n;
 int yo;
