@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * _times_table - a function that prints the n times table, starting with 0.
- *
+ *print_times_table- a function prints the n times table,starting with 0.
+ *@n:number to check___
  * Return: Always___ (0)
  */
 void print_times_table(int n)
@@ -21,7 +21,7 @@ for (mko = 1; mko <= n; mko++)
 _putchar(',');
 _putchar(' ');
 pl = nji * mko;
-if (pl < 100 )
+if (pl < 100)
 _putchar(' ');
 if (pl < 10)
 _putchar(' ');
