@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *_square-a function that prints a square, followed by a new line.
- *
+ *print_square-a function that prints a square, followed by a new line.
+ *@size:bumber to StArt
  * Return: Always (0)____
  */
 
