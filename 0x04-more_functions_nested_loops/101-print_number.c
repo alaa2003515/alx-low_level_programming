@@ -10,7 +10,7 @@
 
 void print_number(int nUmBeR)
 {
-unsigned int koko = mIDO;
+unsigned int koko = nUmBeR;
 
 if (nUmBeR < 0)
 {
