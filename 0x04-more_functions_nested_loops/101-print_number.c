@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  *print_number - A function that prints an integer.
  *@nUmBeR: num_ber to start________
@@ -17,13 +17,13 @@ if (nUmBeR < 0)
 
 nUmBeR *= -1;
 koko = nUmBeR;
-_putchar(45);
+_putchar('-');
 }
 
 koko /= 10;
 if (koko != 0)
 {
-_putchar(koko);
+printf("%u", koko);
 }
 _putchar((unsigned int) nUmBeR % 10 + '0');
 
