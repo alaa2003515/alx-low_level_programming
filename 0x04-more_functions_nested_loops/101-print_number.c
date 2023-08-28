@@ -23,7 +23,7 @@ _putchar('-');
 koko /= 10;
 if (koko != 0)
 {
-printf("%u", koko);
+print_number(koko);
 }
 _putchar((unsigned int) nUmBeR % 10 + '0');
 
