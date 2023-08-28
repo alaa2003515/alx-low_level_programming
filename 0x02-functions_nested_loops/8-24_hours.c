@@ -14,22 +14,23 @@ int bnm;
 int cvb;
 int dfg;
 
-for (asd = 48; asd <= 50; asd++)
+for (asd = 0; asd <= 2; asd++)
 {
-for (bnm = 48; bnm < 58; bnm++)
+for (bnm = 0; bnm < 10; bnm++)
 {
-for (cvb = 48; cvb < 54; cvb++)
+if ((asd < 2  && bnm < 10) || (asd < 3 && bnm < 4))
 {
-for (dfg = 48; dfg < 58; dfg++)
+for (cvb = 0; cvb < 6; cvb++)
 {
-if (asd > 51 && bnm > 53)
-break;
-_putchar(asd);
-_putchar(bnm);
+for (dfg = 0; dfg < 10; dfg++)
+{
+_putchar(asd + '0');
+_putchar(bnm + '0');
 _putchar(58);
-_putchar(cvb);
-_putchar(dfg);
+_putchar(cvb + '0');
+_putchar(dfg + '0');
 _putchar('\n');
+}
 }
 }
 }
