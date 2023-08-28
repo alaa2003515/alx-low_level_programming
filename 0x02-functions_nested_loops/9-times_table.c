@@ -14,7 +14,7 @@ int yoyo;
 int loka;
 int uouo;
 int dodo;
-for (nono = 0 ; n < 10 ; nono++)
+for (nono = 0 ; nono < 10 ; nono++)
 {
 for (yoyo = 0 ; yoyo < 10 ; yoyo++)
 {
