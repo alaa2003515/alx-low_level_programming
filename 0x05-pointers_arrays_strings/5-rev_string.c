@@ -2,8 +2,8 @@
 
 /**
  * rev_string -  a function that reverses a string.
- *@STR: to check
- * Return: returns always (0)
+ *@STR: to check___
+ * Return: returns always (0) ___
  */
 
 void rev_string(char *STR)
@@ -12,10 +12,11 @@ char toto;
 int ioio = 0;
 int lolo = 0;
 
-do {
+while (STR[ioio++])
+{
 
 lolo++;
-} while (STR[ioio++]);
+}
 
 for (ioio = lolo - 1; ioio >= lolo / 2; ioio--)
 {
