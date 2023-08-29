@@ -6,7 +6,7 @@
  * Return: returns always (0) ______
  */
 
-void print_chessboard(char (*a)[8]);
+void print_chessboard(char (*a)[8])
 {
 int iop = 0;
 int nbv = 0;
