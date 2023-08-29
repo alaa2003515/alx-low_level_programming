@@ -23,10 +23,11 @@ else
 {
 yoyo = x / 2;
 }
-do {
+while (yoyo < x)
+{
 _putchar(STR[yoyo]);
 yoyo++;
-} while (yoyo < x);
+}
 
 _putchar('\n');
 }
