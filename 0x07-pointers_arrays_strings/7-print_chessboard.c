@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_strspn-a function that prints the chessboard.
+ *print_chessboard-a function that prints the chessboard.
  *@a:arry of num_ber________
  * Return: returns always (0) ______
  */
@@ -13,7 +13,7 @@ int nbv = 0;
 
 for (; iop < 8; iop++)
 {
-for (; nbv <= 7; nbv++)
+for (; nbv < 8; nbv++)
 
 _putchar(a[iop][nbv]);
 
