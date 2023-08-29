@@ -17,7 +17,7 @@ do {
 lolo++;
 } while (STR[ioio++]);
 
-for (ioio = lolo - 1; ioio >= lolo / 2; ioio--;)
+for (ioio = lolo - 1; ioio >= lolo / 2; ioio--)
 {
 
 toto = STR[ioio];
