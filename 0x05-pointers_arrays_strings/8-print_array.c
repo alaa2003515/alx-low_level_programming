@@ -15,7 +15,7 @@ for  (; yet < n; yet++)
 printf("%d", a[yet]);
 if (yet != (n - 1))
 {
-printf(",");
+printf(", ");
 }
 }
 printf("\n");
