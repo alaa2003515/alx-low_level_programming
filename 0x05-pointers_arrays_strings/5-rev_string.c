@@ -8,23 +8,21 @@
 
 void rev_string(char *STR)
 {
-char x;
-int k = 0;
-int j = k - 1;
+char toto;
+int ioio = 0;
+int lolo = 0;
+
 do {
 
-k++;
-} while (STR[j++]);
-
-while (j >= k / 2)
+lolo++;
+} while (STR[ioio++]);
+ioio = lolo - 1;
+while (ioio >= lolo / 2)
 {
 
-
-j--;
-x = STR[j];
-STR [j] = STR [k - j - 1];
-STR [k - j - 1] = x;
+toto = STR[ioio];
+STR [ioio] = STR [lolo - ioio - 1];
+STR [lolo - ioio - 1] = toto;
+ioio--;
 }
-
-
 }
