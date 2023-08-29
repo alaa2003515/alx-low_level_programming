@@ -12,8 +12,6 @@ void print_buffer(char *b, int size)
 int oiu = 0;
 int jhg;
 int iuy = 0;
-
-
 if (size <= 0)
 {
 printf("\n");
@@ -23,18 +21,13 @@ while (oiu < size)
 {
 jhg = size - oiu < 10 ? size - oiu : 10;
 printf("%.8x: ", oiu);
-
 while (jhg <= 9)
 {
 if (iuy < jhg)
-{
 printf("%.2x", *(b + oiu + iuy));
-}
 else
-{
-printf("  ");
-}
 
+printf("  ");
 if (iuy % 2)
 {
 
@@ -42,12 +35,13 @@ printf(" ");
 }
 iuy++;
 }
-
 for (iuy = 0; iuy < jhg ; iuy++)
 {
 int cxz = *(b + oiu + iuy);
 if (cxz < 32 || cxz > 132)
+{
 cxz = ',';
+}
 printf("%c", cxz);
 }
 printf("\n");
