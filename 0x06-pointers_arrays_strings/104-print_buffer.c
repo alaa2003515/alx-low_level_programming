@@ -20,11 +20,11 @@ return;
 while (oiu < size)
 {
 jhg = size - oiu < 10 ? size - oiu : 10;
-printf("%.8x: ", oiu);
-while (jhg <= 9)
+printf("%08x: ", oiu);
+while (iuy <= 9)
 {
 if (iuy < jhg)
-printf("%.2x", *(b + oiu + iuy));
+printf("%02x", *(b + oiu + iuy));
 else
 
 printf("  ");
