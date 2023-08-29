@@ -9,18 +9,24 @@
 void puts_half(char *STR)
 {
 int x = 0;
+int yoyo;
 while (STR[x] != '\0')
 {
 x++;
 }
-
-do {
-if (STR[x] != '\0')
+if (x % 2 == 1)
 {
-x++;
+yoyo = (x - 1) / 2;
+yoyo += 1;
 }
-_putchar(STR[x]);
+else
+{
+yoyo = x / 2;
+}
+do {
+_putchar(STR[yoyo]);
+yoyo++;
+} while (yoyo < x);
 
-} while (x /= 2);
 _putchar('\n');
 }
