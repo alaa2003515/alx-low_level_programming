@@ -18,7 +18,7 @@ cxz++;
 
 for (cxz -= 1; cxz >= 0; cxz--)
 {
-_putchar(STR[j]);
+_putchar(STR[cxz]);
 }
 _putchar('\n');
 }
