@@ -15,9 +15,9 @@ y++;
 } while (STR[y] != '\0');
 while (x < y)
 {
-x += 2;
-_putchar(STR[y]);
 
+_putchar(STR[x]);
+x += 2;
 }
 _putchar ('\n');
 }
