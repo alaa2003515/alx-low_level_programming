@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_rev-a function that prints a string, in reverse.
  *@STR:NU_M_BER TO CHECK_____
@@ -10,13 +10,13 @@
 
 void print_rev(char *STR)
 {
-int j = 0;
+int cxz = 0;
 do {
 
-j++;
-} while (STR[j] != '\0');
+cxz++;
+} while (STR[cxz] != '\0');
 
-for (j -= 1; j >= 0; j--)
+for (cxz -= 1; cxz >= 0; cxz--)
 {
 _putchar(STR[j]);
 }
