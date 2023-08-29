@@ -15,7 +15,7 @@ unsigned int mody = 0;
 unsigned int walaa = 0;
 
 
-for (; *(s + i) != '\0'; lolo++)
+for (; *(s + lolo) != '\0'; lolo++)
 {
 for (; *(accept + body) != '\0'; body++)
 {
@@ -27,4 +27,6 @@ walaa = 1;
 }
 }
 }
+
+
 
