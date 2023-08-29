@@ -21,7 +21,7 @@ for (; *(accept + body) != '\0'; body++)
 {
 if (*(accept + body) == *(s + lolo))
 {
-mody++
+mody++;
 walaa = 1;
 }
 }
