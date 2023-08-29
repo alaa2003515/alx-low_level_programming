@@ -11,9 +11,9 @@ void print_chessboard(char (*a)[8])
 int iop = 0;
 int nbv = 0;
 
-for (; iop < 8; iop++)
+for (iop = 0; iop < 8; iop++)
 {
-for (; nbv < 8; nbv++)
+for (nbv = 0; nbv < 8; nbv++)
 
 _putchar(a[iop][nbv]);
 
