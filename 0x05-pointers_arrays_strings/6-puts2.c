@@ -10,9 +10,10 @@ void puts2(char *STR)
 {
 int x = 0;
 int y = 0;
-do {
+while (STR[y] != '\0')
+{
 y++;
-} while (STR[y] != '\0');
+}
 while (x < y)
 {
 
