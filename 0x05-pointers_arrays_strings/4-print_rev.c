@@ -11,10 +11,11 @@
 void print_rev(char *STR)
 {
 int cxz = 0;
-do {
+while (STR[cxz] != '\0')
+{
 
 cxz++;
-} while (STR[cxz] != '\0');
+}
 
 for (cxz -= 1; cxz >= 0; cxz--)
 {
