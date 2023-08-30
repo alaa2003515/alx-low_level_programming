@@ -16,7 +16,7 @@ int nono;
 
 for (io = 0; i <= (size * size); io += size + 1)
 soso_1 += *(a + io);
-for (n = size - 1; nono <= (size * size) - size; nono += size - 1)
+for (nono = size - 1; nono <= (size * size) - size; nono += size - 1)
 soso_2 += *(a + nono);
 printf("%d, %d\n", soso_1, soso_2);
 }
