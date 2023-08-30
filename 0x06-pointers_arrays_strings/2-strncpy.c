@@ -17,7 +17,7 @@ while (src[ilove++])
 {
 src_lolo++;
 }
-for  (ilove = 0; src[ilove] && ilove < n; ilove++)
+for  (ilove = 0; (src[ilove]) && (ilove < n); ilove++)
 {
 dest[ilove] = src[ilove];
 }
