@@ -1,25 +1,25 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  *_strncat - A function that concatenates two stringS.
- *@dj: arry____
- *@sj:arry of num_ber________
- *@nj:num_ber to check___
+ *@dest: arry____
+ *@src:arry of num_ber________
+ *@n:num_ber to check___
  * Return: returns always (0) ______
  */
 
-char *_strncat(char *dj, char *sj, int nj)
+char *_strncat(char *dest, char *src, int n)
 {
-int lmn_1 = 0;
-int lnm_2 = 0;
+int imn_1 = 0;
+int dest_lnm_2 = 0;
 
-while (dj[lmn_1++])
+while (dest[imn_1++])
 {
-lmn_2++;
+dest_lnm_2++;
 }
-do {
-dj[lmn_2++] = sj[lmn_1];
-lmn_1++;
-} while (sj[lmn_1] && lmn_1  < nj);
-return (dj);
+for (imn_1 = 0; src[imn_1] && imn_1 < n ; imn_1++)
+{
+dest[dest_lnm_2++] = src[imn_1];
+}
+return (dest);
 }

@@ -4,7 +4,7 @@
 
 int _putchar(char c);
 char *_strcat(char *d, char *s);
-char *_strncat(char *dj, char *sj, int nj);
+char *_strncat(char *dest, char *src, int n);
 void print_buffer(char *b, int size);
 
 #endif
