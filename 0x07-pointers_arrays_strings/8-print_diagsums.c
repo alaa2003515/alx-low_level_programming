@@ -14,7 +14,7 @@ int soso_1 = 0;
 int soso_2 = 0;
 int nono;
 
-for (io = 0; i <= (size * size); io += size + 1)
+for (io = 0; io <= (size * size); io += size + 1)
 soso_1 += *(a + io);
 for (nono = size - 1; nono <= (size * size) - size; nono += size - 1)
 soso_2 += *(a + nono);
