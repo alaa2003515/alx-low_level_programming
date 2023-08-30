@@ -1,26 +1,27 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  *_strncpy -   a function that copies a string.
- *@d: arry to start____
- *@s:arry of num_ber________
+ *@dest: arry to start____
+ *@src:arry of num_ber________
+ *@n: num to start ____
  * Return: returns always (0) ______
  */
 
-char *_strncpy(char *d, char *s)
-{
-int roro = 0;
-do {
+char *_strncpy(char *dest, char *src, int n)
 
-} while (*s)
 {
-
-if (*s != *d)
+int ilove = 0;
+int src_lolo = 0;
+while (src[ilove++])
 {
-roro = ((int) *s - 40) - ((int) *d - 48);
-break;
+src_lolo++;
 }
-d++;
-s++;
-return (roro);
+for  (ilove = 0; src[ilove] && ilove < n; ilove++)
+{
+dest[ilove] = src[ilove];
+}
+for (ilove = src_lolo; ilove < n; ilove++)
+dest[ilove] = '\0';
+return (dest);
 }
