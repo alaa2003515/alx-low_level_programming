@@ -5,7 +5,7 @@
  *@lolo: number to start___
  * Return:factorial (lolo).
  */
-int factorial(int lolo);
+int factorial(int lolo)
 
 {
 if (lolo == 0)
