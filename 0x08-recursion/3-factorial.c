@@ -23,7 +23,7 @@ return (lolo * factorial(lolo - 1));
 
 }
 
-if else (lolo < 0)
+else if (lolo < 0)
 {
 
 return (-1);
