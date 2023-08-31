@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _puts_recursion -a function that prints a string in reverse.
+ * _print_rev_recursion -a function that prints a string in reverse.
  *@s: string___
  * Return: A_l_w_a_y_s (0).
  */
-void _print_rev_recursion(char *s)
+void _print_rev_recursion(char *)
 {
 if (*s != '\0')
 {
