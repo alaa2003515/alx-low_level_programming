@@ -5,7 +5,7 @@
  *@s: string___
  * Return: A_l_w_a_y_s (0).
  */
-void _puts_recursion(char *s)
+void _puts_recursion((int) *s ++);
 {
 if (*s == '\0')
 {
@@ -14,7 +14,6 @@ _putchar('\n');
 return;
 }
 _putchar(*s);
-_putchar('\n');
-_puts_recursion((int) *s ++);
+_puts_recursion(*s ++);
 
 }
