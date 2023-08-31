@@ -15,19 +15,18 @@ if ((lolo == 0) || (lolo == 1))
 return (1);
 
 }
-
-if else (lolo < 0)
-{
-
-return (-1);
-
-}
-
 else
 
 {
 
 return (lolo * factorial(lolo - 1));
+
+}
+
+if else (lolo < 0)
+{
+
+return (-1);
 
 }
 
