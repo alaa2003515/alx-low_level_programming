@@ -12,21 +12,29 @@
  */
 
 
-int main(int argc,char *argv[])
-{
-unsigned int c;
+int c;
+int str;
+int s = 0;
 
-c = 0;
-while (c < strlen(str))
+c = 1;
+while (c < argc)
+{
+if (chek_num(argv[c]))
 
 {
-if (!isdigit(str[c])) 
+str = atoi(argv[c]);
+s += str;
+}
+else
 {
-return (0);
+printf("Error\n");
+return (1);
 }
 
 c++;
-    
 }
-return (1);
+
+printf("%d\n", s);
+
+return (0);
 }
