@@ -18,7 +18,7 @@ if (argc == 3)
 {
 no_1 = atoi(argv[1]);
 no_2 = atoi(argv[2]);
-printf("%d", atoi(argv[1]) * atoi(argv[2]));
+printf("%d", soso);
 printf("\n");
 }
 else
