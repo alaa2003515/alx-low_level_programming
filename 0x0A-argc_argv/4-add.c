@@ -13,21 +13,19 @@
 
 int main(int argc,char *argv[])
 {
-unsigned int b;
-int c;
-int R = 0;
-for (b = 1; b < argc; b++)
+unsigned int c;
+
+c = 0;
+while (c < strlen(str))
+
 {
-for (c = 0; argv[b][c] != '\0'; c++)
+if (!isdigit(str[c])) 
 {
-if (!isdigit(argv[b][c]))
-{
-printf("Error\n");
-return (1);
-}
-}
-R += atoi(argv[b]);
-}
-printf("%d\n", R);
 return (0);
+}
+
+c++;
+    
+}
+return (1);
 }
