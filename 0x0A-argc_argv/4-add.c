@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "main.h"
 
 
 /**
@@ -12,29 +11,23 @@
  */
 
 
+int main(int argc,char *argv[])
+{
+int b;
 int c;
-int str;
-int s = 0;
-
-c = 1;
-while (c < argc)
+int R = 0;
+for (b = 1; b < argc; b++)
 {
-if (chek_num(argv[c]))
-
+for (c = 0; argv[b][c] != '\0'; c++)
 {
-str = atoi(argv[c]);
-s += str;
-}
-else
+if (!isdigit(argv[b][c]))
 {
 printf("Error\n");
 return (1);
 }
-
-c++;
 }
-
-printf("%d\n", s);
-
+R += atoi(argv[b]);
+}
+printf("%d\n", R);
 return (0);
 }
