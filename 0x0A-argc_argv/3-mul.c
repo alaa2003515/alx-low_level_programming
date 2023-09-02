@@ -19,12 +19,12 @@ if (argc == 3)
 no_1 = atoi(argv[1]);
 no_2 = atoi(argv[2]);
 printf("%d", soso);
-puts("\n");
+printf("\n");
 }
 else
 {
 printf("Error");
-puts("\n");
+printf("\n");
 return (1);
 }
 return (0);
