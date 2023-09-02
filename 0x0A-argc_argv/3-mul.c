@@ -5,7 +5,7 @@
  * main - a program that multiplies two numbers.
  * @argc: number of command line arguments.
  * @argv: An array of size argc______
- * Return: always (0)_____
+ * Return:always (0)_____
  */
 
 
