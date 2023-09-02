@@ -13,7 +13,7 @@
 
 int main(int argc,char *argv[])
 {
-int b;
+unsigned int b;
 int c;
 int R = 0;
 for (b = 1; b < argc; b++)
