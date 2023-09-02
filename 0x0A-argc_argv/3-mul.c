@@ -13,17 +13,18 @@ int main(int argc, char *argv[])
 {
 int no_1 = 0;
 int no_2 = 0;
+int soso = no_1 * no_2;
 if (argc == 3)
 {
 no_1 = atoi(argv[1]);
 no_2 = atoi(argv[2]);
-printf("%d", no_1 *no_2);
-putchar("\n");
+printf("%d", soso);
+puts("\n");
 }
 else
 {
 putchar("Error");
-putchar("\n");
+puts("\n");
 return (1);
 }
 return (0);
