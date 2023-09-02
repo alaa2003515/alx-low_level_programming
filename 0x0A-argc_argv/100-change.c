@@ -52,7 +52,7 @@ continue;
 l--;
 }
 
-printf("%d\n"; b);
+printf("%d\n", b);
 
 return (0);
 }
