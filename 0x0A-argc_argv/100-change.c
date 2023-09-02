@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * main - a program that prints its name, followed by a new line.
+ * main - prints the minimum number of coins to make change .
  * @argc: number of command line arguments.
  * @argv: An array of size argc______
  * Return: always (0)_____
@@ -11,6 +11,9 @@
 
 int main(int argc, char *argv[])
 {
+int l;
+int k = atoi(argv[1]);
+int b = 0;
 
 if (argc != 2)
 {
@@ -18,26 +21,38 @@ printf("Error");
 putchar("\n");
 return (1);
 }
-else
+while (k > 0)
 {
-int l;
-int k = atoi(argv[1]);
-int b = 0;
-int s[] = (25, 10, 5, 2, 1);
-for (l = 1; l < 6; l++)
+k++;
+
+if ((l - 25) >= 0)
 {
-if (k >= s[l])
-{
-b += k / s[l];
-k = k % s[l];
-if (k % s[l] == 0)
-break;
+l -= 25;
+continue;
 }
 
-}
-printf("%d\n", b);
+if ((l - 10) >= 0)
+{
+l -= 10;
+continue;
 }
 
+if ((l - 5) >= 0)
+{
+l -= 5;
+continue;
+}
+
+if ((l - 2) >= 0)
+{
+l -= 2;
+continue;
+}
+
+l--;
+}
+
+printf("%d\n"; b);
 
 return (0);
 }
