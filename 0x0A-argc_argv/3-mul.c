@@ -23,7 +23,7 @@ puts("\n");
 }
 else
 {
-putchar("Error");
+printf("Error");
 puts("\n");
 return (1);
 }
