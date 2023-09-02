@@ -21,35 +21,25 @@ printf("Error");
 putchar("\n");
 return (1);
 }
-while (k > 0)
+while (l > 0)
 {
-k++;
 
-if ((l - 25) >= 0)
-{
+if (l >= 25)
 l -= 25;
-continue;
-}
 
-if ((l - 10) >= 0)
-{
+else if (l >= 10)
 l -= 10;
-continue;
-}
 
-if ((l - 5) >= 0)
-{
+else if (l >= 5)
 l -= 5;
-continue;
-}
 
-if ((l - 2) >= 0)
-{
+else if (l >= 2)
 l -= 2;
-continue;
-}
 
-l--;
+else if (l >= 1)
+l -= 1;
+
+b += 1;
 }
 
 printf("%d\n", b);
