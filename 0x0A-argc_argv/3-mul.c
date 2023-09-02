@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - a program that multiplies two numbers.
  * @argc: number of command line arguments.
@@ -15,13 +16,15 @@ int no_2 = 0;
 if (argc == 3)
 {
 no_1 = atoi(argv[1]);
-no_2 = atoi(argv[1]);
+no_2 = atoi(argv[2]);
 printf("%d", no_1 *no_2);
 putchar("\n");
 }
 else
-}
+{
 putchar("Error");
-putchar('\n');
+putchar("\n");
 return (1);
+}
+return (0);
 }
