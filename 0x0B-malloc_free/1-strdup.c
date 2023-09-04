@@ -9,9 +9,9 @@
  */
 char *_strdup(char *str)
 {
-unsigned int tall;
+int tall;
 char *KOKA;
-unsigned int i;
+int i;
 if (str == 0 || KOKA == 0)
 {
 return (NULL);
