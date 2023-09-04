@@ -3,16 +3,15 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- *free_grid-function frees a 2 dimensional grid previously.
- *@grid:number of grid _______
- *@height: height of var ____
+ *_strdup -a function frees a 2 dimensional grid previously created by your alloc_grid function.
+ *@str:arry 1_______
  * Return: returns always (0) ______
  */
 void free_grid(int **grid, int height)
 {
-for (int poma = 0; poma < height; poma++)
+for (int poma = 0; poma < height;poma++)
 {
-free(grid[i]);
+free(grid[poma]);
 }
 free(grid);
 
