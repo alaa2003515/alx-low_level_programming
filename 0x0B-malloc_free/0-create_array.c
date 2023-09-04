@@ -12,7 +12,7 @@
 char *create_array(unsigned int size, char c)
 {
 
-int num;
+unsigned int num;
 char *KOKA;
 KOKA = malloc(1 * sizeof(char));
 if (size == 0 || KOKA == 0)
