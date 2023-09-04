@@ -9,7 +9,8 @@
  */
 void free_grid(int **grid, int height)
 {
-for (int poma = 0; poma < height;poma++)
+int poma;
+for (poma = 0; poma < height;poma++)
 {
 free(grid[poma]);
 }
