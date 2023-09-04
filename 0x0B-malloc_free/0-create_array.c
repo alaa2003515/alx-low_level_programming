@@ -22,6 +22,7 @@ return (NULL);
 for (num = 0; num < size; num++)
 {
 KOKA[num] = c;
-return (KOKA);
+
 }
+return (KOKA);
 }
