@@ -14,10 +14,10 @@ char *create_array(unsigned int size, char c)
 
 unsigned int num;
 char *KOKA;
-KOKA = malloc(1 * sizeof(char));
+KOKA = malloc(size * sizeof(char));
 if (size == 0 || KOKA == 0)
 {
-return (0);
+return (NULL);
 }
 for (num = 0; num < size; num++)
 {
