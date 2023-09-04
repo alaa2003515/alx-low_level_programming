@@ -10,7 +10,7 @@
 char *_strdup(char *str)
 {
 int tall;
-char *KOKA;
+char KOKA;
 int i;
 if (str == 0 || KOKA == 0)
 {
