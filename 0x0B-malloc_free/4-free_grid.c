@@ -1,6 +1,6 @@
-
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 /**
  *free_grid -a function frees a 2 dimensional grid previously
  *@grid:free grid_______
