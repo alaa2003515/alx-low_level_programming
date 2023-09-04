@@ -11,7 +11,7 @@ char *_strdup(char *str)
 {
 unsigned int tall;
 char *KOKA;
-int i;
+unsigned int i;
 if (str == 0 || KOKA == 0)
 {
 return (NULL);
@@ -19,8 +19,9 @@ return (NULL);
 for (tall = 0; str[tall] != 0; tall++)
 KOKA = malloc((tall + 1) * sizeof(char));
 for (i = 0; i <= tall; i++)
-{Koka[i] = str[i];
-
-return (Koka);
+{
+Koka[i] = str[i];
 }
+return (Koka);
+
 }
