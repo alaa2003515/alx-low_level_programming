@@ -17,7 +17,7 @@ char *KOKA;
 KOKA = malloc(1 * sizeof(char));
 if (size == 0 || KOKA == 0)
 {
-return (NULL);
+return (0);
 }
 for (num = 0; num < size; num++)
 {
