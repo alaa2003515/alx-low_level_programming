@@ -10,15 +10,15 @@
 void free_grid(int **grid, int height)
 {
 
-int poma;
+int p;
 
-for (poma = 0; poma < height; poma++)
+for (p = 0; p < height; p++)
 {
 
-free(grid[poma]);
+free(grid[p]);
 
-
+}
 
 free(grid);
-}
+
 }
