@@ -18,7 +18,6 @@ int i = 0;
 int j = 0;
 int sum = i + j;
 int k = 0;
-int l = 0;
 if (s1 == NULL)
 s1 = '\0';
 if (s2 == NULL)
@@ -29,12 +28,12 @@ for (i = 0; s1[i] != '\0'; i++)
 for (j = 0; s2[j] != '\0'; j++)
 {
 }
-s = malloc(sizeof(char) * (sum + 1));
+s = malloc((sizeof(char) * sum) + 1);
 if (s == NULL)
 {
 return (NULL);
 }
-while (k < l)
+while (k < sum)
 {
 if (k <= i)
 {
