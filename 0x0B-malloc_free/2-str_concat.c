@@ -13,11 +13,13 @@
 char *str_concat(char *s1, char *s2)
 {
 char *s;
-unsigned int i, j, k, l;
+unsigned int i; 
+unsigned int j; 
+unsigned int k;
 if (s1 == NULL)
-s1 = '0/';
+s1 = '\0';
 if (s2 == NULL)
-s2 = '0/';
+s2 = '\0';
 
 for (i = 0; s1[i] != '\0'; i++)
 {
