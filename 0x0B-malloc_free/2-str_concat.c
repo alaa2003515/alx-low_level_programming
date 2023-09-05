@@ -14,8 +14,8 @@
 char *str_concat(char *s1, char *s2)
 {
 char *s;
-int i;
-int j;
+int i = 0;
+int j = 0;
 int sum = i + j;
 int k = 0;
 int l;
