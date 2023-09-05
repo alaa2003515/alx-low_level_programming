@@ -8,7 +8,7 @@
  *@str:arry 1_______
  * Return: returns always (0) ______
  */
-cxhar *_strdup(char *str)
+char *_strdup(char *str)
 {
 int tall;
 char *KOKA;
@@ -18,6 +18,9 @@ if (str == 0)
 return (NULL);
 }
 for (tall = 0; str[tall] != 0; tall++)
+{
+
+}
 KOKA = malloc((tall * sizeof(char) ) + 1);
 
 if (KOKA == 0)
