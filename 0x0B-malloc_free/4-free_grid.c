@@ -1,5 +1,6 @@
-#include <stdio.h>
+
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 /**
  *free_grid -a function frees a 2 dimensional grid previously
@@ -11,7 +12,8 @@ void free_grid(int **grid, int height)
 {
 
 int p;
-
+if (grid == NULL)
+        return;
 for (p = 0; p < height; p++)
 {
 
