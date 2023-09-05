@@ -1,9 +1,8 @@
 
 #include "main.h"
-
 #include <stdlib.h>
 /**
- *free_grid -a function frees a 2 dimensional grid previously
+ *_grid - a function that returns a pointer to a 2 dimensional array of integers.
  *@grid:free grid_______
  *@height: height of lines ______
  * Return: returns always (0) ______
@@ -25,7 +24,8 @@ for (i = 0; i < height; i++)
 KOKA[i] = malloc(width * sizeof(int));
 if (KOKA[i] == NULL)
 {
-while (i--){
+while (i--)
+{
 
 free(KOKA[i]);
 free(KOKA);
@@ -36,6 +36,6 @@ for (j = 0; j < width; j++)
 KOKA[i][j] = 0;
 
 }
-}
+
 return (KOKA);
 }
