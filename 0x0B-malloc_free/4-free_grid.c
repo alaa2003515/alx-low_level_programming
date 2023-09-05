@@ -18,7 +18,7 @@ for (poma = 0; poma < height; poma++)
 free(grid[poma]);
 
 
-}
-free(grid);
 
+free(grid);
+}
 }
