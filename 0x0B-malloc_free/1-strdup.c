@@ -1,7 +1,5 @@
-
-#include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
+
 /**
  *_strdup -a function  returns a pointer to a newly allocated space in memory
  *@str:arry 1_______
@@ -18,12 +16,13 @@ return (NULL);
 }
 for (tall = 0; str[tall] != 0; tall++)
 KOKA = malloc(tall * sizeof(char) + 1);
+
 if (KOKA == 0)
 return (NULL);
 else
 {
 for (i = 0; i < tall; i++)
-return (KOKA);
+KOKA[i] = str[i];
 }
-
+return (KOKA);
 }
