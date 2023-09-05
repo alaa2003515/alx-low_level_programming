@@ -4,42 +4,48 @@
 
 
 /**
- *_strdup -a function  returns a pointer to a newly allocated space in memory
- *@str:arry 1_______
+ *str_concat -a function that concatenates two strings.
+ *@s1:string-1 _______
+ *@s2:string-2 --
  * Return: returns always (0) ______
  */
- 
- 
+
+
 char *str_concat(char *s1, char *s2)
 {
 char *s;
-unsigned int i; 
-unsigned int j; 
-
+int i;
+int j;
+int sum = i + j;
+int k = 0;
 if (s1 == NULL)
 s1 = '\0';
 if (s2 == NULL)
 s2 = '\0';
-
 for (i = 0; s1[i] != '\0'; i++)
 {
-
 }
-
 for (j = 0; s2[j] != '\0'; j++)
 {
-
 }
-
-s = malloc(sizeof(char) * (i + j + 1));
-
+s = malloc(sizeof(char) * (sum + 1));
 if (s == NULL)
 {
-free(s);
-return (0);
+return (NULL);
 }
-
-s1[i] = s2[j];
-
+while (k < l)
+{
+if (k <= i)
+{
+s[k] = s1[k];
+}
+if (k >= i)
+{
+s[k] = s2[j];
+j++;
+}
+k++;
+}
+s[k] = '\0';
 return (s);
 }
