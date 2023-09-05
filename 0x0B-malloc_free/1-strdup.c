@@ -21,7 +21,7 @@ for (tall = 0; str[tall] != 0; tall++)
 {
 
 }
-KOKA = malloc((tall * sizeof(char) ) + 1);
+KOKA = malloc((tall * sizeof(char)) + 1);
 
 if (KOKA == 0)
 return (NULL);
