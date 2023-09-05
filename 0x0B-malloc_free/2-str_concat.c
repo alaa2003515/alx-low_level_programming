@@ -18,6 +18,7 @@ int i;
 int j;
 int sum = i + j;
 int k = 0;
+int l;
 if (s1 == NULL)
 s1 = '\0';
 if (s2 == NULL)
