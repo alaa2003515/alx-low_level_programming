@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - prints the minimum number of coins to make change .
  * @argc: number of command line arguments.
@@ -12,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 int l;
-
+int k;
 int b = 0;
 
 if (argc != 2)
@@ -21,6 +20,7 @@ printf("Error");
 putchar("\n");
 return (1);
 }
+k = atoi(argv[1]);
 while (l > 0)
 {
 
