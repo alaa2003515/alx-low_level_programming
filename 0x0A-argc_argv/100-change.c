@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 int l;
-int k = atoi(argv[1]);
+
 int b = 0;
 
 if (argc != 2)
