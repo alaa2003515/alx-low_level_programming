@@ -16,7 +16,7 @@ int no_2 = 0;
 int MULTI = 0;
 if (argc == 3)
 {
-MULTI = atoi(argv[1]) * atoi(argv[2]);
+MULTI = (atoi(argv[1]) * atoi(argv[2]));
 printf("%d", MULTI);
 printf("\n");
 }
