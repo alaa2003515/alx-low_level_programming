@@ -13,12 +13,11 @@ int main(int argc, char *argv[])
 {
 int no_1 = 0;
 int no_2 = 0;
-int soso = no_1 * no_2;
+int MULTI;
 if (argc == 3)
 {
-no_1 = atoi(argv[1]);
-no_2 = atoi(argv[2]);
-printf("%d", soso);
+MULTI = atoi(argv[1]) * atoi(argv[2]);
+printf("%d", MULTI);
 printf("\n");
 }
 else
