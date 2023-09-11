@@ -1,4 +1,10 @@
-#ifndef _FILE NAME_H
-#define _FILE NAME_H
-#define __FILE__ 
-#endif
+
+#include <stdio.h>
+
+int main(void)
+{
+
+printf("%s\n", __FILE__);
+
+return (0);
+}
