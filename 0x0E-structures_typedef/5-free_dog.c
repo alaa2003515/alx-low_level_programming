@@ -21,7 +21,7 @@ if (d->owner)
 {
 free(d->owner);
 }
-
+free(d);
 }
 
 }
