@@ -13,14 +13,19 @@ if (d)
 {
 
 if ((d->name) && (d->owner))
-printf("%s\n%s\n", d->name, d->age);
-
+{
+printf("%s\n", d->name);
+printf("%s\n", d->owner);
+printf("%f\n", d->age);
+}
 else
+{
 printf("(nil)\n");
 
+}
 
 
-printf("%f\n", d->age);
 
 }
+
 }
