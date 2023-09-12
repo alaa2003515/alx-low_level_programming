@@ -15,9 +15,9 @@ if (d)
 if ((d->name) && (d->owner))
 {
 printf("name _ %s\n", d->name);
-
-printf("owner _ %s\n", d->owner);
 printf("age _%f\n", d->age);
+printf("owner _ %s\n", d->owner);
+
 }
 else
 {
@@ -28,3 +28,4 @@ printf("owner _(nil)\n");
 }
 
 }
+
