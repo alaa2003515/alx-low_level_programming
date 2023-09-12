@@ -21,7 +21,7 @@ printf("%f\n", d->age);
 else
 {
 printf("(nil)\n");
-
+printf("(nil)\n");
 }
 
 
