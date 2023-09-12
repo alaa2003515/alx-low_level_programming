@@ -8,18 +8,18 @@
  */
 void free_dog(dog_t *d)
 {
-struct dog dogs;
+
 if (d)
 {
 
 if (d->owner)
 {
-free(owner);
+free(d->owner);
 }
 if (d->name)
 {
-free(name);
+free(d->name);
 }
-return (0);
+
 }
 }
