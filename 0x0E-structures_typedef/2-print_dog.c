@@ -14,15 +14,15 @@ if (d)
 
 if ((d->name) && (d->owner))
 {
-printf("name _ %s\n", d->name);
-printf("age _%f\n", d->age);
-printf("owner _ %s\n", d->owner);
+printf("Name: %s\n", d->name);
+printf("Age: %f\n", d->age);
+printf("Owner: %s\n", d->owner);
 
 }
 else
 {
-printf("name  _(nil)\n");
-printf("owner _(nil)\n");
+printf("Name: (nil)\n");
+printf("Owner: (nil)\n");
 }
 
 }
