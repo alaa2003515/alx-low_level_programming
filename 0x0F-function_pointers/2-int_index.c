@@ -15,7 +15,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 int star;
 int *endfunction = array + size;
-if ((array != NULL) && size != 0 && (cmp != NULL))
+if ((array != NULL) && (size != 0) && (cmp != NULL))
 
 {
 for (star = 0; star < size; star++)
