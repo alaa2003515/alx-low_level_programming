@@ -18,7 +18,8 @@ int *endfunction = array + size;
 if ((array != NULL) && size && (cmp != NULL))
 
 {
-for (star = 0; cmp(array[star]) < size; star++)
+for (star = 0; star < size; star++)
+if (cmp(array[star]) != 0)
 return (star);
 
 }
