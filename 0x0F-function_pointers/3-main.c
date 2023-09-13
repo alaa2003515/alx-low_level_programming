@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-int (*op_func)(int, int);
+int (*operationfunc)(int, int);
 int frist;
 int second;
 if (argc != 4)
@@ -20,8 +20,8 @@ exit(98);
 }
 frist = atoi(argv[1]);
 second = atoi(argv[3]);
-op_func = get_op_func(argv[2]);
-if (op_func == 0)
+operationfunc = get_op_func(argv[2]);
+if (!operationfunc)
 {
 printf("Error\n");
 exit(99);
@@ -31,6 +31,6 @@ if ((second == 0) && (argv[2][0] == '/') || (argv[2][0] == '%'))
 printf("Error\n");
 exit(100);
 }
-printf("%d\n", op_func(frist, second));
+printf("%d\n", operationfunc(frist, second));
 return (0);
 }
