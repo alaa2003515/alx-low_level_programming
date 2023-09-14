@@ -1,4 +1,6 @@
 #include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - prints the minimum number of coins to make change .
@@ -10,7 +12,7 @@
 
 int main(int argc, char **argv)
 {
-int (*operationfunc)(int, int);
+char *operafunc;
 int frist;
 int second;
 if (argc != 4)
@@ -19,18 +21,19 @@ printf("Error\n");
 exit(98);
 }
 frist = atoi(argv[1]);
+operafunc = (argv[2]);
 second = atoi(argv[3]);
-operationfunc = get_op_func(argv[2]);
-if (!operationfunc)
+
+if ((get_op_func(operafunc) == NULL) || (operafunc[1] != '\0'))
 {
 printf("Error\n");
 exit(99);
 }
-if ((second == 0) && (argv[2][0] == '/') || (argv[2][0] == '%'))
+if ((*operafunc == '/' && second == 0) || (*operafunc == '%' && second == 0))
 {
 printf("Error\n");
 exit(100);
 }
-printf("%d\n", operationfunc(frist, second));
+printf("%d\n", get_op_func(operafunc)(frist, second));
 return (0);
 }

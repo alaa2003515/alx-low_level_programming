@@ -1,5 +1,6 @@
 #include "3-calc.h"
-
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * op_add - a function returns the sum of two numbers_______
  * @a: the frist number____

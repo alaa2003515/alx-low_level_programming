@@ -1,4 +1,6 @@
 #include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * get_op_func - a function returns the sum of operation_______
@@ -17,12 +19,10 @@ op_t ops[] = {
 {NULL, NULL}
 };
 int i = 0;
-while (i < 5)
+while ((ops[i] . op != NULL) && (*(ops[i] . op) != *s))
 {
-if ((s != NULL) && (s[0] == ops[i] . op[0]) && (!s[1]))
-return (ops[i].f);
 i++;
-
 }
-return (NULL);
+return (ops[i].f);
+
 }
