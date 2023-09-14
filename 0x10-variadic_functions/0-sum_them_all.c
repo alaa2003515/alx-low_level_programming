@@ -10,9 +10,10 @@
 int sum_them_all(const unsigned int n, ...)
 {
 
-va_list lol;
+
 int SuM = 0;
 int numBer;
+va_list lol;
 va_start(lol, n);
 
 if (n == 0)
