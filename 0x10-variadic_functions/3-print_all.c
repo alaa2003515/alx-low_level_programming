@@ -73,7 +73,7 @@ takeit_t takeit[] = {
 {NULL, NULL}
 };
 va_start(lol, format);
-while ((format != 0) && (format[frist] != NULL))
+while ((format != 0) && (format[frist] != 0))
 {
 
 while ((takeit[frist].takeit) != NULL)

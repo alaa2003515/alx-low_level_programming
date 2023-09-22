@@ -1,0 +1,72 @@
+File Edit Options Buffers Tools C Help                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+#include "main.h"
+/**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+ *_printf - a fanction that output characters____________                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+ *Return: return the total of number of characters printed_______                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+ */
+________________
+
+/**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+ *_putchar - a fanction prints characters________                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+ *@CHraCTer: input character________                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+ *Return: return CHraCTer_____                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+ */
+
+int _putchar (char CHraCTer)
+{
+return (write(1, CHraCTer));
+}
+int _printf(const char *format, ...)
+{
+va_list long;
+int FINALLY_YES = 0;
+va_start(long, format);
+for (; *format != NULL; format++)
+{
+if (*format == '%')
+{
+format++;
+switch (*format)
+{
+case 's':
+{
+char *STRing = va_arg(long, char *);
+for ((!STRing) && (*STRing != NULL); FINALLY_YES++)
+{
+_putchar (STRing);
+STRing++;
+}
+break;
+}
+case '%':
+{
+_putchar ('%');
+FINALLY_YES++;
+break;
+}
+case 'c':
+{
+char CC = (char)va_arg(long, int);
+_putchar(cc);
+FINALLY_YES++;
+break;
+}
+default:
+break;
+}
+}
+else()
+{
+_putchar(*format);
+FINALLY_YES++;
+}
+}
+va_end (long);
+return (FINALLY_YES);
+}
+
+
+
+
+
+
