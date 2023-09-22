@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  *new_dog - a new dog_______
@@ -11,41 +12,33 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-int one, lara, lowana;
+int one, lowana;
 dog_t *my_dog;
 
-my_dog = malloc(sizeof(*my_dog));
-if ((my_dog == NULL) || (!(name)) || (!(owner)))
+my_dog = malloc(sizeof(dog_t));
+if (my_dog == NULL)
+return (NULL);
+
+one = strlen(name);
+lowana = strlen(owner);
+
+my_dog->name = malloc(one + 1);
+if (my_dog->name == NULL)
 {
 free(my_dog);
 return (NULL);
 }
+strcpy(my_dog->name, name);
 
-for (lara = 0; name[lara]; lara++)
-;
+my_dog->age = age;
 
-for (lara = 0; owner[lowana]; lowana++)
-;
-
-my_dog->name = malloc(lara + 1);
 my_dog->owner = malloc(lowana + 1);
-
-if ((!(my_dog->name)) || (!(my_dog->owner)))
+if (my_dog->owner == NULL)
 {
-free(my_dog->owner);
 free(my_dog->name);
 free(my_dog);
 return (NULL);
 }
-for (one = 0; one < lara; one++)
-my_dog->name[one] = name[one];
-my_dog->name[one] = '\0';
-
-my_dog->age = age;
-
-for (one = 0; one < lowana; one++)
-my_dog->owner[one] = owner[one];
-my_dog->owner[one] = '\0';
-
+strcpy(my_dog->owner, owner);
 return (my_dog);
 }
