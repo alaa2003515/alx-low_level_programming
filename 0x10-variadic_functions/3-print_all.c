@@ -46,8 +46,7 @@ printf("%s%f", separator, va_arg(lol, double));
 int format_string(char *separator, va_list lol)
 {
 char *sy = va_arg(lol, char *);
-switch ((int) (!sy))
-case 1:
+if (sy == NULL)
 sy = "(nil)";
 printf("%s%s", separator, sy);
 }
@@ -64,7 +63,7 @@ void print_all(const char * const format, ...)
 va_list lol;
 int second = 0;
 int frist = 0;
-char *separator = " ";
+char *separator = "";
 takeit_t takeit[] = {
 {"c", format_char},
 {"i", format_int},
@@ -75,13 +74,15 @@ takeit_t takeit[] = {
 va_start(lol, format);
 while ((format != 0) && (format[frist] != 0))
 {
-
-while ((takeit[frist].takeit) != NULL)
+second = 0;
+while (takeit[frist].takeit != NULL)
 {
 if (format[frist] == takeit[second].takeit[0])
 {
-takeit[second].f(separator, lol);
+printf("%s", separator);
 separator = ", ";
+takeit[second].f(separator, lol);
+
 }
 second++;
 }
