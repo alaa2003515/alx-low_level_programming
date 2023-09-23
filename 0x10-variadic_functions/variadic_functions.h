@@ -18,10 +18,10 @@ char *takeit;
 int (*f)(char *, va_list);
 } takeit_t;
 
-int format_char(char *separator, va_list lol);
-int format_int(char *separator, va_list lol);
-int format_float(char *separator, va_list lol);
-int format_string(char *separator, va_list lol);
+void format_char(char *separator, va_list lol);
+void format_int(char *separator, va_list lol);
+void format_float(char *separator, va_list lol);
+void format_string(char *separator, va_list lol);
 
 
 
