@@ -7,7 +7,7 @@
  * Return: returns always (0) ______
  */
 
-void format_char(char *separator, va_list lol)
+int format_char(char *separator, va_list lol)
 {
 printf("%s%c", separator, va_arg(lol, int));
 }
@@ -19,7 +19,7 @@ printf("%s%c", separator, va_arg(lol, int));
  * Return: returns always (0) ______
  */
 
-void format_int(char *separator, va_list lol)
+int format_int(char *separator, va_list lol)
 {
 printf("%s%d", separator, va_arg(lol, int));
 }
@@ -31,7 +31,7 @@ printf("%s%d", separator, va_arg(lol, int));
  * Return: returns always (0) ______
  */
 
-void format_float(char *separator, va_list lol)
+int format_float(char *separator, va_list lol)
 {
 printf("%s%f", separator, va_arg(lol, double));
 }
@@ -43,7 +43,7 @@ printf("%s%f", separator, va_arg(lol, double));
  * Return: returns always (0) ______
  */
 
-void format_string(char *separator, va_list lol)
+int format_string(char *separator, va_list lol)
 {
 char *sy = va_arg(lol, char *);
 switch ((int) (!sy))
