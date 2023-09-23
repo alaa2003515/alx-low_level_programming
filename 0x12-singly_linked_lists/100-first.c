@@ -1,14 +1,15 @@
 #include "lists.h"
 
 
+
 /**
- * main - check the code
+ * _constructor - a function that prints_______
  *
- * Return: Always 0.
+ * Return: no Return.
  */
 
-int main(void)
+ 
+void _constructor(void)
 {
-printf("You're beat! and yet, you must allow,\n"
-"I bore my house upon my back!\n");
+printf("You're beat! and yet, you must allow,\n""I bore my house upon my back!\n");
 }
