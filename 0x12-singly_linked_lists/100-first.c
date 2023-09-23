@@ -1,6 +1,6 @@
 #include "lists.h"
 
-
+void __constructor(void) __attribute__ ((constructor));
 
 /**
  * _constructor - a function that prints_______
