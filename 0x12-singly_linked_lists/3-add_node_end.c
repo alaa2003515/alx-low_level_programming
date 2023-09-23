@@ -8,29 +8,34 @@
  */
 
 list_t *add_node_end(list_t **head, const char *str)
-
+{
 {
 list_t *koka = malloc(sizeof(list_t));
-list_t *nono = *head;
+list_t *nono;
 
 if (!head || !koka)
 return (NULL);
-if (str)
-{
+
 koka->str = strdup(str);
 if (!koka->str)
 {
 free(koka);
 return (NULL);
 }
+
 koka->len = strlen(koka->str);
-}
-if (nono)
+koka->next = NULL;
+
+if (*head == NULL)
 {
-while (nono->next)
-nono = nono->next;
+*head = koka;
 }
 else
-*head = koka;
+{
+nono = *head;
+while (nono->next != NULL)
+nono = nono->next;
+nono->next = koka;
+}
 return (koka);
 }
