@@ -7,7 +7,7 @@
  * Return: returns always (0) ______
  */
 
-int format_char(char *separator, va_list lol)
+void format_char(char *separator, va_list lol)
 {
 printf("%s%c", separator, va_arg(lol, int));
 }
@@ -19,7 +19,7 @@ printf("%s%c", separator, va_arg(lol, int));
  * Return: returns always (0) ______
  */
 
-int format_int(char *separator, va_list lol)
+void format_int(char *separator, va_list lol)
 {
 printf("%s%d", separator, va_arg(lol, int));
 }
@@ -31,11 +31,10 @@ printf("%s%d", separator, va_arg(lol, int));
  * Return: returns always (0) ______
  */
 
-int format_float(char *separator, va_list lol)
+void format_float(char *separator, va_list lol)
 {
 printf("%s%f", separator, va_arg(lol, double));
 }
-
 /**
  * format_string- a function format(string)_______
  *@lol:pointer______
@@ -43,7 +42,7 @@ printf("%s%f", separator, va_arg(lol, double));
  * Return: returns always (0) ______
  */
 
-int format_string(char *separator, va_list lol)
+void format_string(char *separator, va_list lol)
 {
 char *sy = va_arg(lol, char *);
 if (sy == NULL)
@@ -65,14 +64,14 @@ int second = 0;
 int frist = 0;
 char *separator = "";
 takeit_t takeit[] = {
-{"c", format_char},
-{"i", format_int},
-{"f", format_float},
-{"s", format_string},
+{"c", (void (*)(char *, va_list))format_char},
+{"i", (void (*)(char *, va_list))format_int},
+{"f", (void (*)(char *, va_list))format_float},
+{"s", (void (*)(char *, va_list))format_string},
 {NULL, NULL}
 };
 va_start(lol, format);
-while ((format != 0) && (format[frist] != 0))
+while (format && format[frist])
 {
 second = 0;
 while (takeit[frist].takeit != NULL)
