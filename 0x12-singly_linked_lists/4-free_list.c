@@ -18,7 +18,7 @@ nono = head;
 while (nono)
 {
 koka = nono->next;
-free(koka->str);
+free(nono->str);
 free(nono);
 nono = koka;
 }
