@@ -31,9 +31,9 @@ int soso_2;
 int star;
 
 if (s1 == NULL)
-s1 = '\0';
+s1 = "\0";
 if (s2 == NULL)
-s2 = '\0';
+s2 = "\0";
 
 soso_1 = _strlen(s1);
 soso_2 = _strlen(s2);
