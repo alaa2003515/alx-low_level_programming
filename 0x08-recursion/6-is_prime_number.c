@@ -24,7 +24,7 @@ int heer(int n, int vec)
 {
 if ((vec >= n) && (n >  1))
 return (1);
-else if ((n % vec == 0) || (n <= n))
+else if ((n % vec == 0) || (n <= 1))
 return (0);
 else
 return (heer(n, vec + 1));
