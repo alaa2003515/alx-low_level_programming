@@ -29,17 +29,16 @@ char *mo;
 int ip = 0;
 int jp = 0;
 int star = 0;
+int nc = 0;
 if (ac == 0 || av == NULL)
 return (NULL);
 
-for (; ip < ac; ip++, ac++)
-ac += _strlen(av[ip]);
+for (; ip < ac; ip++, nc++)
+nc += _strlen(av[ip]);
 
-mo = malloc(ac *sizeof(char) + 1);
-
+mo = malloc(sizeof(char) * nc  + 1);
 if (mo == 0)
 return (NULL);
-
 for (ip = 0; ip < ac; ip++)
 {
 for (jp = 0; av[ip][jp] != '\0'; jp++, star++)
