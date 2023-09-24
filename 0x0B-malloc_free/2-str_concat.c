@@ -2,6 +2,19 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ *_strlen -a function helper____
+ *@s:string _______
+ * Return: returns always (0) ______
+ */
+
+int _strlen(char *s)
+{
+int soso = 0;
+for (; s[soso] != '\0'; soso++)
+;
+return (soso);
+}
 
 /**
  *str_concat -a function that concatenates two strings.
@@ -10,42 +23,33 @@
  * Return: returns always (0) ______
  */
 
-
 char *str_concat(char *s1, char *s2)
 {
-char *s;
-int i = 0;
-int j = 0;
-int sum = i + j;
-int k = 0;
+char *mo;
+int soso_1;
+int soso_2;
+int star;
+
 if (s1 == NULL)
-s1 = '\0';
+soso_1 = '\0';
 if (s2 == NULL)
-s2 = '\0';
-for (i = 0; s1[i] != '\0'; i++)
+soso_2 = '\0';
+
+soso_1 = _strlen(s1);
+soso_2 = _strlen(s2);
+mo = malloc((soso_1 + soso_2) *sizeof(char) + 1);
+
+if (mo == 0)
+return (0);
+
+for (star = 0; star <= soso_1 + soso_2; star++)
 {
+
+if (star < soso_1)
+mo[star] = s1[star];
+else
+mo[star] = s2[star - soso_1];
 }
-for (j = 0; s2[j] != '\0'; j++)
-{
-}
-s = malloc((sizeof(char) * sum) + 1);
-if (s == NULL)
-{
-return (NULL);
-}
-while (k < sum)
-{
-if (k <= i)
-{
-s[k] = s1[k];
-}
-if (k >= i)
-{
-s[k] = s2[j];
-j++;
-}
-k++;
-}
-s[k] = '\0';
-return (s);
+mo[star] = '\0';
+return (mo);
 }
