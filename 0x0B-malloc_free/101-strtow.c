@@ -12,7 +12,7 @@ int _wlaa(char *s)
 {
 int ip = 0;
 int np = 0;
-for (ip; s[ip]; ip++)
+for (ip = 0 ; s[ip]; ip++)
 {
 if (s[ip] == ' ')
 {
