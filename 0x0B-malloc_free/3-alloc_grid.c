@@ -3,38 +3,34 @@
 
 #include <stdlib.h>
 /**
- *free_grid -a function frees a 2 dimensional grid previously
- *@grid:free grid_______
+ *alloc_grid -a function frees a 2 dimensional grid previously
+ *@width:free grid_______
  *@height: height of lines ______
  * Return: returns always (0) ______
  */
 int **alloc_grid(int width, int height)
 {
 
-int **KOKA;
-int i;
-int j;
-KOKA = malloc(height * sizeof(int));
+int **KOKA, ip, jp;
+KOKA = malloc(height * sizeof(*KOKA));
 if (width <= 0  || height <= 0 || KOKA == 0)
 {
 return (NULL);
 }
 else
 {
-for (i = 0; i < height; i++)
+for (ip = 0; ip < height; ip++)
 {
-KOKA[i] = malloc(width * sizeof(int));
-if (KOKA[i] == NULL)
+KOKA[ip] = malloc(width * sizeof(**KOKA));
+if (KOKA[ip] == 0)
 {
-while (i--)
-
-free(KOKA[i]);
+while (ip--)
+free(KOKA[ip]);
 free(KOKA);
 return (NULL);
-
 }
-for (j = 0; j < width; j++)
-KOKA[i][j] = 0;
+for (jp = 0; jp < width; jp++)
+KOKA[ip][jp] = 0;
 }
 }
 return (KOKA);
