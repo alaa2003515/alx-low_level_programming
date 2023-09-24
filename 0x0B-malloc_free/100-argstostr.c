@@ -27,7 +27,6 @@ char *argstostr(int ac, char **av)
 {
 char *mo;
 int ip = 0;
-int no = 0;
 int jp = 0;
 int star = 0;
 if (ac == 0 || av == NULL)
