@@ -15,9 +15,9 @@ unsigned int s1_lo;
 unsigned int s2_lo;
 char *string;
 if (s1 == NULL)
-s1 = " ";
+s1 = "";
 if (s2 == NULL)
-s2 = " ";
+s2 = "";
 for (s1_lo = 0; s1[s1_lo] != '\0'; s1_lo++)
 ;
 
@@ -28,9 +28,9 @@ if (string == NULL)
 {
 return (NULL);
 }
-for (; s1[ip] != '\0'; ip++)
+for (ip = 0; s1[ip] != '\0'; ip++)
 string[ip] = s1[ip];
-for (; jp < n; jp++)
+for (jp = 0; jp < n; jp++)
 {
 string[ip] = s2[jp];
 ip++;
