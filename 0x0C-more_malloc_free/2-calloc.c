@@ -27,7 +27,7 @@ return (pointer);
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 void *mk;
-if ((size == 0) || (nmemb == 0))
+if (size == 0 || nmemb == 0)
 return (NULL);
 mk = malloc(sizeof(int) * nmemb);
 if (mk == NULL)
