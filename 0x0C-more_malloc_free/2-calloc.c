@@ -32,9 +32,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 void *mk;
 if (size == 0 || nmemb == 0)
 return (NULL);
-mk = malloc(sizeof(int) * nmemb);
-if (mk == 0)
+mk = malloc(nmemb * size);
+if (mk == NULL)
 return (NULL);
-mim(mk, 0, sizeof(int) * nmemb);
+mim(mk, 0, nmemb * size);
 return (mk);
 }
