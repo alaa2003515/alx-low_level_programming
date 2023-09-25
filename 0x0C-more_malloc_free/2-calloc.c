@@ -33,7 +33,7 @@ void *mk;
 if (size == 0 || nmemb == 0)
 return (NULL);
 mk = malloc(sizeof(int) * nmemb);
-if (mk == NULL)
+if (mk == 0)
 return (NULL);
 mim(mk, 0, sizeof(int) * nmemb);
 return (mk);
