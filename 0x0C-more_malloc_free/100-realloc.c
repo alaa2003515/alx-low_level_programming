@@ -30,4 +30,15 @@ if (mk == NULL)
 return (NULL);
 return (mk);
 }
+
+if (new_size > old_size)
+{
+mk = malloc(new_size);
+if (mk == NULL)
+return (NULL);
+for (ip = 0; ip < old_size && ip < new_size; ip++)
+*((char *)mk + ip) = *((char *)ptr + ip);
+free(ptr);
+}
+return (mk);
 }
