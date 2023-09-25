@@ -19,8 +19,8 @@ int ip;
 if (min > max)
 return (NULL);
 lo = max - min + 1;
-mk = malloc(min * max);
-if (mk != NULL)
+mk = malloc(sizeof(int) * lo);
+if (!mk)
 return (NULL);
 
 for (ip = 0; ip < lo; ip++)
