@@ -17,13 +17,13 @@ void *mk;
 unsigned int ip;
 
 if (new_size ==  old_size)
-return (mk);
-if (new_size == 0 && !mk)
+return (ptr);
+if (new_size == 0 && ptr != NULL)
 {
-free(mk);
+free(ptr);
 return (NULL);
 }
-if (mk == NULL)
+if (ptr == NULL)
 {
 mk = malloc(new_size);
 if (mk == NULL)
