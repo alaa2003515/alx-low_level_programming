@@ -17,8 +17,7 @@ if ((!head) || (!all_n))
 return (NULL);
 all_n->n = n;
 all_n->next = NULL;
-
-if (!*head)
+if (!idx)
 {
 all_n->next = *head;
 *head = all_n;
