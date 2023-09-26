@@ -10,7 +10,7 @@ void free_listint2(listint_t **head)
 {
 listint_t *n_o_d_e;
 listint_t *t_a_l;
-if (head != NULL)
+if (!head)
 return;
 n_o_d_e = *head;
 while (n_o_d_e)

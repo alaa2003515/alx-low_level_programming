@@ -14,7 +14,7 @@ if (!head || !*head)
 return (0);
 n_o_d_e = (*head)->next;
 n = (*head)->n;
-free(head);
+free(*head);
 *head = n_o_d_e;
 return (n);
 }
