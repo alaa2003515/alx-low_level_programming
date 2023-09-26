@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- *findout-a function help______
+ *find_listint_loop-a function help______
  * @head: pointer_____
  * Return: no return___
  */
 
-listint_t *findout(listint_t *head)
+listint_t *find_listint_loop(listint_t *head)
 {
 listint_t *pointer;
 listint_t *totall;
