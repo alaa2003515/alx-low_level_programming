@@ -1,56 +1,6 @@
 #include "variadic_functions.h"
 
 /**
- * format_char- a function format(char)_______
- *@lol:pointer______
- * @separator: separator between numbers_____
- * Return: returns always (0) ______
- */
-
-void format_char(char *separator, va_list lol)
-{
-printf("%s%c", separator, va_arg(lol, int));
-}
-
-/**
- * format_int- a function format(int)_______
- *@lol:pointer______
- * @separator: separator between numbers_____
- * Return: returns always (0) ______
- */
-
-void format_int(char *separator, va_list lol)
-{
-printf("%s%d", separator, va_arg(lol, int));
-}
-
-/**
- * format_float- a function format(float)_______
- *@lol:pointer______
- * @separator: separator between numbers_____
- * Return: returns always (0) ______
- */
-
-void format_float(char *separator, va_list lol)
-{
-printf("%s%f", separator, va_arg(lol, double));
-}
-/**
- * format_string- a function format(string)_______
- *@lol:pointer______
- * @separator: separator between numbers_____
- * Return: returns always (0) ______
- */
-
-void format_string(char *separator, va_list lol)
-{
-char *sy = va_arg(lol, char *);
-if (sy == NULL)
-sy = "(nil)";
-printf("%s%s", separator, sy);
-}
-
-/**
  * print_all -  a function that prints anything____
  * @format: format of data type_____
  * Return: no returns  ______
@@ -59,32 +9,41 @@ printf("%s%s", separator, sy);
 void print_all(const char * const format, ...)
 
 {
+int frist;
+int second;
+char *string;
 va_list lol;
-int second = 0;
-int frist = 0;
-char *separator = "";
-takeit_t takeit[] = {
-{"c", (void (*)(char *, va_list))format_char},
-{"i", (void (*)(char *, va_list))format_int},
-{"f", (void (*)(char *, va_list))format_float},
-{"s", (void (*)(char *, va_list))format_string},
-{NULL, NULL}
-};
 va_start(lol, format);
+frist = 0;
 while (format && format[frist])
 {
+switch (format[frist])
+{
+case 'i':
+printf("%d", va_arg(lol, int));
 second = 0;
-while (takeit[frist].takeit != NULL)
-{
-if (format[frist] == takeit[second].takeit[0])
-{
-printf("%s", separator);
-separator = ", ";
-takeit[second].f(separator, lol);
-
+break;
+case 'f':
+printf("%f", va_arg(lol, double));
+second = 0;
+break;
+case 'c':
+printf("%c", va_arg(lol, int));
+second = 0;
+break;
+case 's':
+string = va_arg(lol, char *);
+if (string == NULL)
+string = "(nil)";
+printf("%s", string);
+second = 0;
+break;
+default:
+second = 1;
+break;
 }
-second++;
-}
+if (format[frist + 1] != '\0' && second == 0)
+printf(", ");
 frist++;
 }
 printf("\n");
