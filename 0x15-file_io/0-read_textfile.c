@@ -20,8 +20,6 @@ return (0);
 fd = open(filename, O_RDONLY);
 if (fd == -1)
 return (0);
-if (letters == 0)
-return (0);
 buff = malloc(sizeof(char) * (letters + 1));
 if (buff == NULL)
 {
@@ -43,5 +41,6 @@ free(buff);
 return (0);
 }
 close(fd);
+free(buff);
 return (writting);
 }
