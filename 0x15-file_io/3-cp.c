@@ -1,3 +1,4 @@
+#include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include "main.h"
@@ -29,8 +30,7 @@ char buffer[BUFFER_SIZE];
 if (argc != 3)
 {
 print_error("Usage: cp file_from file_to");
-exit(97);
-}
+exit(97); }
 fd_from = open(argv[1], O_RDONLY);
 if (fd_from == -1)
 {
@@ -49,18 +49,18 @@ bytes_written = write(fd_to, buffer, bytes_read);
 if (bytes_written == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-exit(99);
-}
-}
+exit(99); } }
 if (bytes_read == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-exit(98);
-}
-if (close(fd_from) == -1 || close(fd_to) == -1)
+exit(98); }
+if (close(fd_from) == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close file descriptors\n");
-exit(100);
-}
+dprintf(STDERR_FILENO, "Error: Can't close file descriptor for %s\n", argv[1]);
+exit(100); }
+if (close(fd_to) == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't close file descriptor for %s\n", argv[2]);
+exit(100); }
 return (0);
 }
