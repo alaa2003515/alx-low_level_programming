@@ -15,28 +15,28 @@ if (n >= 0 && n < 16)
 {
 for (nji = 0; nji <= n; nji++)
 {
-_putchar('0');
+putchar('0');
 for (mko = 1; mko <= n; mko++)
 {
-_putchar(',');
-_putchar(' ');
+putchar(',');
+putchar(' ');
 pl = nji * mko;
 if (pl < 100 )
-_putchar(' ');
+putchar(' ');
 if (pl < 10)
-_putchar(' ');
+putchar(' ');
 if (pl >= 100)
 {
-_putchar((pl / 100) + '0');
-_putchar(((pl / 10)) % 10 + '0');
+putchar((pl / 100) + '0');
+putchar(((pl / 10)) % 10 + '0');
 }
 else if (pl < 100 && pl >= 10)
 {
-_putchar((pl / 10) + '0');
+putchar((pl / 10) + '0');
 }
-_putchar((pl % 10) + '0');
+putchar((pl % 10) + '0');
 }
-_putchar('\n');
+putchar('\n');
 }
 }
 }

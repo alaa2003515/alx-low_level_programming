@@ -1,0 +1,88 @@
+Question #0
+In which category belongs the C programming language?
+
+
+Compiled language *
+
+
+Interpreted language
+
+Question #1
+What are the different steps to form an executable file from C source code
+
+
+Preprocessing and compilation
+
+
+Compilation and linking
+
+
+Interpretation, assembly and compilation
+
+
+Preprocessing, compilation, assembly, and linking *
+
+
+Interpretation, compilation and assembly
+
+Question #2
+What is the common extension for a C header file?
+
+
+.h *
+
+
+.ch
+
+
+.hpp
+
+
+.header
+
+Question #3
+Which of the following are both valid comment syntaxes in ANSI C, and Betty-compliant?
+
+
+/*
+ * Comment *
+ */
+
+/* Comment /* nested */ */
+
+# Comment
+
+/*
+Comment
+*/
+
+// Comment
+
+/* Comment */ *
+
+Question #4
+Which command can be used to compile a C source file?
+
+
+bash
+
+
+gcc *
+
+
+c-compiler
+
+Question #5
+What is the common extension for a C source file?
+
+
+.cpp
+
+
+.py
+
+
+.c  *
+
+
+.txt
