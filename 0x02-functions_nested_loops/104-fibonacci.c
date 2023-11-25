@@ -12,19 +12,17 @@
 int main(void)
 {
 	unsigned long fib1 = 1, fib2 = 2, sum = 0;
-	int i = 3;
-
-	while (i <= 98)
+	int i;
+printf("1, 2, ");
+	for (i = 3; i <= 98; i++)
 	{
 		sum = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = sum;
 		if (i < 98)
 			printf("%lu, ", sum);
-		if (i == 98)
+		else
 			printf("%lu\n", sum);
-		i++;
 	}
-	printf("%ld, ", sum);
 	return (0);
 }
