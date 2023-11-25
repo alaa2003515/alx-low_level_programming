@@ -1,50 +1,30 @@
 #include"main.h"
 
 /**
- * print_times_table - function that prints the n times table, starting with 0
+ * main - entry point
  *
- * @n :function input
+ * Description: program that finds and prints the first 98 Fibonacci numbers
+ *
+ * Return: 0(success)
 */
 
-void print_times_table(int n)
+
+int main(void)
 {
-	int x, y, prod;
+	unsigned long fib1 = 1, fib2 = 2, sum = 0;
+	int i = 3;
 
-	if (n >= 0 && n <= 15)
+	while (i <= 98)
 	{
-		for (x = 0; x <= n; x++)
-		{
-			_putchar(48);
-			for (y = 1; y <= n; y++)
-			{
-				_putchar(',');
-				_putchar(' ');
-				prod = x * y;
-				if (prod < 10)
-					_putchar(' ');
-				if (prod < 100)
-				{
-					_putchar(' ');
-				}
-				if (prod > 100)
-				{
-					_putchar((prod / 100) + 48);
-					_putchar(((prod / 10) % 10) + 48);
-				}
-				if (prod == 100)
-				{
-					_putchar((prod / 100) + 48);
-					_putchar(48);
-				}
-				else if (prod >= 10 && prod <= 99)
-				{
-					_putchar ((prod / 10) + 48);
-
-				}
-				_putchar((prod % 10) + 48);
-
-			}
-			_putchar('\n');
-		}
+		sum = fib1 + fib2;
+		fib1 = fib2;
+		fib2 = sum;
+		if (i < 98)
+			printf("%lu, ", sum);
+		if (i == 98)
+			printf("%lu\n", sum);
+		i++;
 	}
+	printf("%ld, ", sum);
+	return (0);
 }
